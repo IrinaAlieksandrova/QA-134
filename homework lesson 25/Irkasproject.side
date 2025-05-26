@@ -1,0 +1,440 @@
+{
+  "id": "8361dbb4-4ec8-41ee-ab2c-9c2431f7580d",
+  "version": "2.0",
+  "name": "Irkasproject",
+  "url": "https://rozetka.ua",
+  "tests": [{
+    "id": "a31bb4c0-8173-4928-95bf-27b2cd4e3adb",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "0defadee-3b29-4dfe-bd3c-45ab209e7265",
+    "name": "Додавння товару у кошик",
+    "commands": [{
+      "id": "20d2046e-af5b-41a8-aa67-c6249ba4c35b",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bad87aeb-8f58-4c5b-913c-77fc54164638",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7026928d-8faf-4d2f-af4e-6715cf0b2619",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "кавомашина"
+    }, {
+      "id": "c94f12fb-dbec-45ac-9011-ad4d4204f2c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Знайти')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "140201a2-280e-4d22-b64c-e25e6cdc3787",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Кофемашина Siemens EQ6 TE658209RW']",
+      "targets": [
+        ["css=.item:nth-child(1) .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Кофемашина Siemens EQ6 TE658209RW']", "xpath:img"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "295bca0d-044d-498b-86f2-aa3246fbdef5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[20]",
+      "targets": [
+        ["css=.buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/div/rz-product-main-info/div/div[2]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3f46ddd-3d90-47d0-93e4-5b74b14ea5ae",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[6]",
+      "targets": [
+        ["css=.cart-list__item:nth-child(1) .cart-product__body .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98e29929-6f4d-4a45-bc41-dbae969a4ba5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .icon > use",
+      "targets": [
+        ["css=.btn > .icon > use", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "41c1fe8c-3ca6-4c42-89fb-5c77354a0ba5",
+    "name": "Фільтрація по цінам",
+    "commands": [{
+      "id": "3a8ebe9f-e549-4670-b89a-e0416f3e8645",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05949de8-383d-4ff7-af26-f84324bb5082",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Побутова техніка')])[2]",
+      "targets": [
+        ["linkText=Побутова техніка", "linkText"],
+        ["css=li:nth-child(4) > .category-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Побутова техніка')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://bt.rozetka.com.ua/ua/')])[18]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6d76d95-1927-443a-8304-20d8afdff0eb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Кавомашини')]",
+      "targets": [
+        ["css=.top-widget__categories-item:nth-child(3) .popular-category__title", "css:finder"],
+        ["xpath=//li[3]/rz-category-tile/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Кавомашини')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f47c1ffc-e6bb-40eb-a25b-07c09d810a9e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//select",
+      "targets": [
+        ["css=.select-css", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9b0ba4d-4314-4bd0-b398-f80d2424d75d",
+      "comment": "",
+      "command": "select",
+      "target": "css=.select-css",
+      "targets": [],
+      "value": "label=От дешевых к дорогим"
+    }, {
+      "id": "55924065-c7c9-4522-90ce-8da7637bddd5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//option[contains(.,' От дешевых к дорогим ')]",
+      "targets": [
+        ["css=option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='cheap']", "xpath:attributes"],
+        ["xpath=//option", "xpath:position"],
+        ["xpath=//option[contains(.,' От дешевых к дорогим ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "73b124d5-a3f3-4cd9-bc8e-f1d67695dfc6",
+    "name": "Повернення на головну сторінку",
+    "commands": [{
+      "id": "222eaa70-8abf-4301-bdce-a07a6ae3b7e7",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b70d7e0-4075-4f50-b0e9-54dd02e2311f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Товари для дому')])[2]",
+      "targets": [
+        ["linkText=Товари для дому", "linkText"],
+        ["css=li:nth-child(5) > .category-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Товари для дому')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/tovary-dlya-doma/c2394287/')])[2]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a6c608c-bf12-4b1c-b26b-fb05a428d6bb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Посуда')]",
+      "targets": [
+        ["linkText=Посуда", "linkText"],
+        ["css=rz-widget-list:nth-child(2) .portal-grid__cell:nth-child(2) .tile-cats__heading", "css:finder"],
+        ["xpath=//a[contains(text(),'Посуда')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/posuda-dlia-kuhni/c4626594/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/rz-list-tile/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Посуда')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb0df345-72c6-460b-983c-48dab1f1aa13",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Сковороды')]",
+      "targets": [
+        ["css=.top-widget__categories-item:nth-child(1) .popular-category__title", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Сковороды')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3532a5ae-1208-42f1-9d89-6aebba940b6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A fill-current",
+      "targets": [
+        ["css=.hover\\3A fill-current", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "984fadd3-2d8e-428c-81d9-9a8476f4de52",
+    "name": "Зміна мови сайту",
+    "commands": [{
+      "id": "9b462dc1-ca35-4cd8-a349-4fa59ffa663a",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4aee8e29-6eca-4f7a-b7ac-775b8516be4d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7571ce0b-85cb-46b3-98eb-ca1fb337a864",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "чашка"
+    }, {
+      "id": "8e1189b5-0398-4c61-83ae-152be262dbb8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Знайти')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee0cfe39-d821-4389-ae1d-9762a362202f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--link > svg",
+      "targets": [
+        ["css=.button--link > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8728ea5-f66a-46b5-9416-1947d04fb406",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'UA')]",
+      "targets": [
+        ["css=li:nth-child(1) > .button", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-0']/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//div/ul/li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'UA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bbbe0223-706d-4397-853d-aca7b47e562e",
+    "name": "Видалення товару із кошика",
+    "commands": [{
+      "id": "516c08ca-39bd-4a9b-b7b8-f0465b98202d",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98a26641-5300-41fd-b040-faa5c1a7e978",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Кавомашина KRUPS EVIDENCE ECO-DESIGN EA897B10']",
+      "targets": [
+        ["css=.slide:nth-child(4) .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Кавомашина KRUPS EVIDENCE ECO-DESIGN EA897B10']", "xpath:img"],
+        ["xpath=//div[4]/rz-product-tile/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a3b3df-880a-4dc8-9ae6-f13f4a5e014b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[35]",
+      "targets": [
+        ["css=.buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[35]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/div/rz-product-main-info/div/div[2]/div/div[3]/rz-product-buy-btn/rz-buy-button/button", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a077711-03d3-4295-adc8-36b1b1ddf5a3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[3]",
+      "targets": [
+        ["css=.cart-product__desktop-item .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "144b10fc-b49c-43c9-97a3-3180943f49b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .icon > use",
+      "targets": [
+        ["css=.btn > .icon > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "84dca5ac-6c66-496e-a9cf-f19f666187f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A fill-current",
+      "targets": [
+        ["css=.hover\\3A fill-current", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb4e07fc-9602-47de-8906-47b6722c991d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Бездротовий пилосос Dreame R10 PRO']",
+      "targets": [
+        ["css=.slide:nth-child(3) .tile-image", "css:finder"],
+        ["xpath=//img[@alt='Бездротовий пилосос Dreame R10 PRO']", "xpath:img"],
+        ["xpath=//div[3]/rz-product-tile/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa413c99-1915-49ed-8c4a-1b70886c3f1a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//rz-buy-button/button/span",
+      "targets": [
+        ["css=.buy-button__label", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/div/rz-product-main-info/div/div[2]/div/div[3]/rz-product-buy-btn/rz-buy-button/button/span", "xpath:idRelative"],
+        ["xpath=//rz-buy-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe7de4a7-18ae-4d73-8831-baf9ea1e981d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[2]",
+      "targets": [
+        ["css=.cart-list__item:nth-child(1) .cart-product__body .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83625683-d36e-43d8-99ba-8694b81b1c93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn use",
+      "targets": [
+        ["css=.btn use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c711438-cb1a-408a-af7f-aacb0104e017",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-cart__button > svg",
+      "targets": [
+        ["css=.header-cart__button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "98d792ec-6a2c-4540-a4bf-adefb44f0883",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button > .button",
+      "targets": [
+        ["css=.button > .button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b33eca1b-a217-468a-8188-b03e18c93173",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='cdk-overlay-0']/div/ul/li/button",
+      "targets": [
+        ["css=.cart-header__remove__text-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[65]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-0']/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b3210289-5197-4b23-8de9-de2f61e942b8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a31bb4c0-8173-4928-95bf-27b2cd4e3adb"]
+  }],
+  "urls": ["https://rozetka.ua/"],
+  "plugins": []
+}
